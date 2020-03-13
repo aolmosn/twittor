@@ -9,5 +9,7 @@ function actualizaCacheDinamico( dynamicCache, req, res) {
             cache.put( req, res.clone() );
             return res.clone();
         })
+    } else {
+        return res;
     }
 }
